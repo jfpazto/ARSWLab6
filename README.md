@@ -25,6 +25,7 @@
         compile group: 'org.webjars', name: 'jquery', version: '3.1.0'
     }               
     ```
+    ![](img/Punto1.png)
 
 ## Front-End - Vistas
 
@@ -33,6 +34,7 @@
     ```
     src/main/resources/static
     ```
+    ![](img/Punto1-2.png)
 
 4. Cree, en el directorio anterior, la página index.html, sólo con lo básico: título, campo para la captura del autor, botón de 'Get blueprints', campo donde se mostrará el nombre del autor seleccionado, [la tabla HTML](https://www.w3schools.com/html/html_tables.asp) donde se mostrará el listado de planos (con sólo los encabezados), y un campo en donde se mostrará el total de puntos de los planos del autor. Recuerde asociarle identificadores a dichos componentes para facilitar su búsqueda mediante selectores.
 
@@ -48,6 +50,7 @@
         <link rel="stylesheet"
           href="/webjars/bootstrap/4.1.2/css/bootstrap.min.css" />
     ```
+    ![](img/Punto3-2.png)
 
 
 5. Suba la aplicación (mvn spring-boot:run), y rectifique:
@@ -104,3 +107,5 @@
 13. Modifique el código de app.js de manera que sea posible cambiar entre el 'apimock' y el 'apiclient' con sólo una línea de código.
 
 14. Revise la [documentación y ejemplos de los estilos de Bootstrap](https://v4-alpha.getbootstrap.com/examples/) (ya incluidos en el ejercicio), agregue los elementos necesarios a la página para que sea más vistosa, y más cercana al mock dado al inicio del enunciado.
+
+![](img/Pagina.png)
