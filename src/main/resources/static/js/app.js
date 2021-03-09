@@ -1,4 +1,4 @@
-app= (function (){
+ app= (function (){
     var _funcModify = function (variable) {
         if(variable != null){
             var arreglo = variable.map(function(blueprint){
@@ -49,14 +49,16 @@ app= (function (){
     return {
             plansAuthor: function () {
                 author = document.getElementById("autor").value;
-                apimok.getBlueprintsByAuthor(author,_funcModify);
-
+                apiclient.getBlueprintsByAuthor(author, _funcModify);
+                //apimok.getBlueprintsByAuthor(author,_funcModify);
             },
 
             drawPlan: function(name) {
                 author = document.getElementById("autor").value;
                 obra = name;
-                apimok.getBlueprintsByNameAndAuthor(author,obra,_funcDraw);
+                console.log(name);
+                apiclient.getBlueprintsByNameAndAuthor(author,obra, _funcDraw);
+                //apimok.getBlueprintsByNameAndAuthor(author,obra,_funcDraw);
             }
         };
 })();
